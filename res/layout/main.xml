@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Extra Phone Info"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="space.works"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#2299FF"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Your IMEI/MEID/ESN number is:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/imei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textIsSelectable="true"
+                android:selectAllOnFocus="true" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Your network details:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                 />
+
+            <EditText
+                android:id="@+id/uuid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textIsSelectable="true"
+                android:selectAllOnFocus="true"/>
+
+<!--             <com.mopub.mobileads.MoPubView -->
+<!--                 android:id="@+id/adview2" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="50dp" > -->
+<!--             </com.mopub.mobileads.MoPubView> -->
+
+        <com.google.ads.AdView
+            android:id="@+id/abc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="a14fc105f7696a9"
+            ads:loadAdOnCreate="true" />
+        
+  
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Your SIM card details:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textIsSelectable="true"
+                android:selectAllOnFocus="true"/>
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Your subscriber details:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/subs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textIsSelectable="true"
+                android:selectAllOnFocus="true" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Your unique Android ID is:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/serial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textIsSelectable="true"
+                android:selectAllOnFocus="true" />
+
+             <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+			<com.google.ads.AdView
+            android:id="@+id/abc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="a14fc105f7696a9"
+            ads:loadAdOnCreate="true" />
+
+        
+    </LinearLayout>
+              
+<!--             <com.mopub.mobileads.MoPubView -->
+<!--                 android:id="@+id/adview" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="50dp" > -->
+<!--             </com.mopub.mobileads.MoPubView> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
