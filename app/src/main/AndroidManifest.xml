@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="space.works.id.check"
-    android:versionCode="3"
-    android:versionName="1.2" >
+    android:versionCode="4"
+    android:versionName="1.4" >
 
     <uses-sdk android:minSdkVersion="7" />
 
@@ -10,13 +10,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.HoloEverywhereLight" >
+        android:theme="@style/Theme.Holo" >
         <activity
             android:name=".IdcheckActivity"
             android:label="@string/app_name" >
@@ -26,24 +23,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.google.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
-
-        <!-- AppBrain SDK -->
-        <activity
-            android:name="com.appbrain.AppBrainActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation" />
-
-        <service android:name="com.appbrain.AppBrainService" />
-
-        <receiver
-            android:name="com.appbrain.ReferrerReceiver"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER" />
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>
