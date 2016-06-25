@@ -13,8 +13,6 @@ public class IdcheckActivity extends Activity {
     /** Called when the activity is first created. */
 
     public void onBackPressed(){
-    	
-    	//AppBrain.getAds().showInterstitial(this);
         finish();
     }
 	
