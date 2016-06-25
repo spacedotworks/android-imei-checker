@@ -10,7 +10,6 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 public class IdcheckActivity extends Activity {
-    /** Called when the activity is first created. */
 
     public void onBackPressed(){
         finish();
